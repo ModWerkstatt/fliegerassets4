@@ -1,16 +1,16 @@
 function data()
-	info_name = "Flugzeug Asset 4"
-	info_desc = (
-				"Flugzeugset zum gestallten von Flugplatzscenen.")
 	return {
 		de = {
-			[info_name] = info_name,
-			[info_desc] = info_desc,
+
+			["mod_name"] = "Flugzeug Asset Set 4",
+			["mod_desc"] = "Flugzeugset zum Gestalten von Flugplatzszenen.",
+
 		},
 		en = {
-			[info_name] = 	"Aircraft Asset 4",
-			[info_desc] = 	(
-				"Aircraft set to setup Airfieldscenes.")
+
+			["mod_name"] = 	"Aircraft Asset Set 4",
+			["mod_desc"] = 	"Aircraft collection to set up airfield scenes.",
+
 		},
 	}
 end
