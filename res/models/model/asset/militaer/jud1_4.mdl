@@ -1,0 +1,74 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 3.51806, 1.3765, 2.57652, },
+		bbMin = { -3.05938, -1.3765, -0.02719, },
+	},
+	collider = {
+		params = {
+			
+		},
+		type = "MESH",
+	},
+	lods = {
+		{
+			node = {
+			children = {
+				{
+					materials = { "asset/militaer/jud1/rumpf4.mtl", },
+					mesh = "asset/militaer/jud1/rumpf_lod0.msh",
+					transf = { 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, -1.10776, 0.0, 1.3755, 1.0,},
+				}, 
+			},
+			    name = "RootNode",
+			    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 150,
+		},
+		{
+			node = {
+			children = {
+				{
+					materials = { "asset/militaer/jud1/rumpf4.mtl", },
+					mesh = "asset/militaer/jud1/rumpf_lod0.msh",
+					transf = { 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, -1.10776, 0.0, 1.3755, 1.0,},
+				}, 
+			},
+			    name = "RootNode",
+			    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		},
+			static = false,
+			visibleFrom = 150,
+			visibleTo = 250,
+		},
+		{
+			node = {
+			children = {
+				{
+					materials = { "asset/militaer/jud1/rumpf4.mtl", },
+					mesh = "asset/militaer/jud1/rumpf_lod0.msh",
+					transf = { 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, -1.10776, 0.0, 1.3755, 1.0,},
+				}, 
+			},
+			    name = "RootNode",
+			    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		},
+			static = false,
+			visibleFrom = 250,
+			visibleTo = 2000,
+		}, 
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1967,
+			yearTo = 2001,
+		},
+		cost = {
+			price = 5000,
+		},
+	},
+	version = 1,
+}
+end

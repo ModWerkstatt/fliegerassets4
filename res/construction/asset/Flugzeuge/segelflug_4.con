@@ -1,0 +1,99 @@
+function data()
+return { 
+	type = "ASSET_DEFAULT",
+	description = {
+		name = _("Segelflug Asset Set"),			
+		description = _("Statische Segelflugzeuge.")
+	},
+	availability = {},
+	buildMode = "MULTI",
+	categories = { "Flugzeuge" },
+	order = 212210101,
+	skipCollision = true,
+	autoRemovable = false,
+	params = {
+		{
+			key = "fox",
+			name = _("Fox MDM-1 ab 1993"),
+			uiType = "ICON_BUTTON",
+			values = { "ui/segler/leer.tga", "ui/segler/fox_1.tga", "ui/segler/fox_2.tga", "ui/segler/fox_3.tga",  },
+			tooltip = _("Segelflug als Asset"),
+		},
+		{
+			key = "kranich3",
+			name = _("FW Kranich 3 ab 1952"),
+			uiType = "ICON_BUTTON",
+			values = { "ui/segler/leer.tga", "ui/segler/kranich3_1.tga", "ui/segler/kranich3_2.tga", "ui/segler/kranich3_3.tga", },
+			tooltip = _("Segelflug als Asset"),
+		},
+		{
+			key = "Salto",
+			name = _("H-101 Salto ab 1970"),
+			uiType = "ICON_BUTTON",
+			values = { "ui/segler/leer.tga", "ui/segler/salto_2.tga", "ui/segler/salto_1.tga",},
+			tooltip = _("Segelflug als Asset"),
+		},
+	},
+	updateFn = function(params)
+		local result = { }
+		result.models = {  }
+		local height = 0
+		
+		if params.fox == 0 then
+		result.models[#result.models+1] = {id = "asset/Bundeswehr/leer.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -50, 1, }, }
+		end
+		
+		if params.fox == 1 then
+		result.models[#result.models+1] = {id = "asset/Segelflug/fox_1.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+		
+		if params.fox == 2 then
+		result.models[#result.models+1] = {id = "asset/Segelflug/fox_2.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+		
+		if params.fox == 3 then
+		result.models[#result.models+1] = {id = "asset/Segelflug/fox_3.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+		
+		
+		
+		if params.kranich3 == 0 then
+		result.models[#result.models+1] = {id = "asset/Bundeswehr/leer.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -50, 1, }, }
+		end
+		
+		if params.kranich3 == 1 then
+		result.models[#result.models+1] = {id = "asset/Segelflug/kranich3_1.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+		
+		if params.kranich3 == 2 then
+		result.models[#result.models+1] = {id = "asset/Segelflug/kranich3_2.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+		
+		if params.kranich3 == 3 then
+		result.models[#result.models+1] = {id = "asset/Segelflug/kranich3_3.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+		
+		
+		
+		if params.Salto == 0 then
+		result.models[#result.models+1] = {id = "asset/Bundeswehr/leer.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -50, 1, }, }
+		end
+		
+		if params.Salto == 1 then
+		result.models[#result.models+1] = {id = "asset/Segelflug/salto_1.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+		
+		if params.Salto == 2 then
+		result.models[#result.models+1] = {id = "asset/Segelflug/salto_2.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+		
+		
+		
+		result.terrainAlignmentLists = { {
+			type = "EQUAL",
+			faces =  { }
+		} }
+		return result
+	end
+}
+end

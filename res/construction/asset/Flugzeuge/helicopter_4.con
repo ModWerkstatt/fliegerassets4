@@ -1,0 +1,57 @@
+function data()
+return { 
+	type = "ASSET_DEFAULT",
+	description = {
+		name = _("Hubschrauber Asset Set"),			
+		description = _("Statische Hubschrauber.")
+	},
+	availability = {},
+	buildMode = "MULTI",
+	categories = { "Flugzeuge" },
+	order = 212210101,
+	skipCollision = true,
+	autoRemovable = false,
+	params = {
+		{
+			key = "r44",
+			name = _("Robinson R44 1993"),
+			uiType = "ICON_BUTTON",
+			values = { "ui/bundeswehr/leer.tga", "ui/heli/r44_1.tga", "ui/heli/r44_2.tga", "ui/heli/r44_3.tga", "ui/heli/r44_4.tga", },
+			tooltip = _("Robinson R44 als Asset"),
+		},
+	},
+	updateFn = function(params)
+		local result = { }
+		result.models = {  }
+		local height = 0
+		
+		if params.r44 == 0 then
+		result.models[#result.models+1] = {id = "asset/heli/leer.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -100, 1, }, }
+		end
+		
+		if params.r44 == 1 then
+		result.models[#result.models+1] = {id = "asset/heli/r44_1.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+		
+		if params.r44 == 2 then
+		result.models[#result.models+1] = {id = "asset/heli/r44_2.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+		
+		if params.r44 == 3 then
+		result.models[#result.models+1] = {id = "asset/heli/r44_3.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+		
+		if params.r44 == 4 then
+		result.models[#result.models+1] = {id = "asset/heli/r44_4.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+		
+		
+		
+		result.terrainAlignmentLists = { {
+			type = "EQUAL",
+			faces =  { }
+		} }
+		return result
+	end
+}
+end

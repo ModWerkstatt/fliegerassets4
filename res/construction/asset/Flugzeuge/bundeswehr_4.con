@@ -1,0 +1,63 @@
+function data()
+return { 
+	type = "ASSET_DEFAULT",
+	description = {
+		name = _("Bundeswehr Asset Set"),			
+		description = _("Statische Flugzeuge der Bundeswehr.")
+	},
+	availability = {},
+	buildMode = "MULTI",
+	categories = { "Flugzeuge" },
+	order = 212210101,
+	skipCollision = true,
+	autoRemovable = false,
+	params = {
+		{
+			key = "at6",
+			name = _("AT6 Texan 1939"),
+			uiType = "ICON_BUTTON",
+			values = { "ui/bundeswehr/leer.tga", "ui/bundeswehr/at6_1.tga", "ui/bundeswehr/at6_2.tga", "ui/bundeswehr/at6_3.tga", "ui/bundeswehr/at6_4.tga", "ui/bundeswehr/at6_5.tga", "ui/bundeswehr/at6_6.tga",},
+			tooltip = _("AT6 Texan als Asset"),
+		},
+	},
+	updateFn = function(params)
+		local result = { }
+		result.models = {  }
+		local height = 0
+		
+		if params.at6 == 0 then
+		result.models[#result.models+1] = {id = "asset/Bundeswehr/leer.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -50, 1, }, }
+		end
+		
+		if params.at6 == 1 then
+		result.models[#result.models+1] = {id = "asset/Bundeswehr/at6_1.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+		
+		if params.at6 == 2 then
+		result.models[#result.models+1] = {id = "asset/Bundeswehr/at6_2.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+		
+		if params.at6 == 3 then
+		result.models[#result.models+1] = {id = "asset/Bundeswehr/at6_3.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+		
+		if params.at6 == 4 then
+		result.models[#result.models+1] = {id = "asset/Bundeswehr/at6_4.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+		
+		if params.at6 == 5 then
+		result.models[#result.models+1] = {id = "asset/Bundeswehr/at6_5.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+		
+		if params.at6 == 6 then
+		result.models[#result.models+1] = {id = "asset/Bundeswehr/at6_6.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+		
+		result.terrainAlignmentLists = { {
+			type = "EQUAL",
+			faces =  { }
+		} }
+		return result
+	end
+}
+end

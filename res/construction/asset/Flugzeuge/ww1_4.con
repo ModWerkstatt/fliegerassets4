@@ -1,0 +1,116 @@
+function data()
+return { 
+	type = "ASSET_DEFAULT",
+	description = {
+		name = _("Luftwaffe Asset Set"),			
+		description = _("Statische Flugzeuge/Asset des ersten Weltkrieg.")
+	},
+	availability = {},
+	buildMode = "MULTI",
+	categories = { "Flugzeuge" },
+	order = 212210101,
+	skipCollision = true,
+	autoRemovable = false,
+	params = {
+		{
+			key = "demoiselle",
+			name = _("Demoiselle 1907"),
+			uiType = "ICON_BUTTON",
+			values = { "ui/militaer/leer.tga", "ui/ww1/demoiselle.tga", },
+			tooltip = _("Luftwaffe des WW1 als Asset"),
+		},
+		{
+			key = "white_flyer",
+			name = _("White 1911"),
+			uiType = "ICON_BUTTON",
+			values = { "ui/militaer/leer.tga", "ui/ww1/white_flyer.tga", },
+			tooltip = _("Luftwaffe des WW1 als Asset"),
+		},
+		{
+			key = "fokd2",
+			name = _("Fokker D2"),
+			uiType = "ICON_BUTTON",
+			values = { "ui/militaer/leer.tga", "ui/ww1/fokkerd2_1.tga", "ui/ww1/fokkerd2_2.tga", },
+			tooltip = _("Luftwaffe des WW1 als Asset"),
+		},
+		{
+			key = "jud1",
+			name = _("Junkers D1"),
+			uiType = "ICON_BUTTON",
+			values = { "ui/militaer/leer.tga", "ui/ww1/ju-d1_1.tga", "ui/ww1/ju-d1_2.tga", "ui/ww1/ju-d1_3.tga", "ui/ww1/ju-d1_4.tga", },
+			tooltip = _("Luftwaffe des WW1 als Asset"),
+		},
+	},
+	updateFn = function(params)
+		local result = { }
+		result.models = {  }
+		local height = 0
+		
+		
+		if params.demoiselle == 0 then
+		result.models[#result.models+1] = {id = "asset/militaer/leer.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -100, 1, }, }
+		end
+		
+		if params.demoiselle == 1 then
+		result.models[#result.models+1] = {id = "asset/militaer/demoiselle.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+		
+		
+		
+		if params.white_flyer == 0 then
+		result.models[#result.models+1] = {id = "asset/militaer/leer.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -100, 1, }, }
+		end
+		
+		if params.white_flyer == 1 then
+		result.models[#result.models+1] = {id = "asset/militaer/white_flyer.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+		
+		
+		
+		
+		
+		if params.fokd2 == 0 then
+		result.models[#result.models+1] = {id = "asset/militaer/leer.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -100, 1, }, }
+		end
+		
+		if params.fokd2 == 1 then
+		result.models[#result.models+1] = {id = "asset/militaer/fokd2_1.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+		
+		if params.fokd2 == 2 then
+		result.models[#result.models+1] = {id = "asset/militaer/fokd2_2.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+		
+		
+		
+		
+		
+		if params.jud1 == 0 then
+		result.models[#result.models+1] = {id = "asset/militaer/leer.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -100, 1, }, }
+		end
+		
+		if params.jud1 == 1 then
+		result.models[#result.models+1] = {id = "asset/militaer/jud1_1.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+		
+		if params.jud1 == 2 then
+		result.models[#result.models+1] = {id = "asset/militaer/jud1_2.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+		
+		if params.jud1 == 3 then
+		result.models[#result.models+1] = {id = "asset/militaer/jud1_3.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+		
+		if params.jud1 == 4 then
+		result.models[#result.models+1] = {id = "asset/militaer/jud1_4.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+		
+		
+		result.terrainAlignmentLists = { {
+			type = "EQUAL",
+			faces =  { }
+		} }
+		return result
+	end
+}
+end

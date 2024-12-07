@@ -1,0 +1,47 @@
+function data()
+return { 
+	type = "ASSET_DEFAULT",
+	description = {
+		name = _("Luftwaffe Asset Set"),			
+		description = _("Statische Flugzeuge der Luftwaffe.")
+	},
+	availability = {},
+	buildMode = "MULTI",
+	categories = { "Flugzeuge" },
+	order = 212210101,
+	skipCollision = true,
+	autoRemovable = false,
+	params = {
+		{
+			key = "dfs230",
+			name = _("DFS 230 1938"),
+			uiType = "ICON_BUTTON",
+			values = { "ui/luftwaffe/leer.tga",  "ui/luftwaffe/dfs230_1.tga",  "ui/luftwaffe/dfs230_2.tga", },
+			tooltip = _("Luftwaffe als Asset"),
+		},
+	},
+	updateFn = function(params)
+		local result = { }
+		result.models = {  }
+		local height = 0
+		
+		if params.dfs230 == 0 then
+		result.models[#result.models+1] = {id = "asset/Bundeswehr/leer.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -100, 1, }, }
+		end
+		
+		if params.dfs230 == 1 then
+		result.models[#result.models+1] = {id = "asset/Luftwaffe/dfs230_1.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+		
+		if params.dfs230 == 2 then
+		result.models[#result.models+1] = {id = "asset/Luftwaffe/dfs230_2.mdl", transf = {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+		
+		result.terrainAlignmentLists = { {
+			type = "EQUAL",
+			faces =  { }
+		} }
+		return result
+	end
+}
+end

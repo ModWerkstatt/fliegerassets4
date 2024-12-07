@@ -1,0 +1,109 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 2.33644, 9.00195, 4.76234, },
+		bbMin = { -10.81235, -9.00195, -0.0131, },
+	},
+	collider = {
+		params = { },
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "MESH",
+	},
+	lods = {
+		{
+			node = {
+				animations = { },
+				children = {
+					{
+						_meshId = 1,
+						_origMeshId = 1,
+						materials = { "asset/Luftwaffe/dfs230/glas.mtl", },
+						mesh = "asset/Luftwaffe/dfs230/glas_lod0.msh",
+						name = "MSH_Fenster_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						_meshId = 2,
+						_origMeshId = 2,
+						materials = { "asset/Luftwaffe/dfs230/rumpf1.mtl", },
+						mesh = "asset/Luftwaffe/dfs230/rumpf_lod0.msh",
+						name = "MSH_Rumpf_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -0.18, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				animations = { },
+				children = {
+					{
+						_meshId = 1,
+						_origMeshId = 1,
+						materials = { "asset/Luftwaffe/dfs230/glas.mtl", },
+						mesh = "asset/Luftwaffe/dfs230/glas_lod0.msh",
+						name = "MSH_Fenster_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						_meshId = 2,
+						_origMeshId = 2,
+						materials = { "asset/Luftwaffe/dfs230/rumpf1.mtl", },
+						mesh = "asset/Luftwaffe/dfs230/rumpf_lod1.msh",
+						name = "MSH_Rumpf_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -0.18, 1, },
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 250,
+		},
+		{
+			node = {
+				animations = { },
+				children = {
+					{
+						_meshId = 1,
+						_origMeshId = 1,
+						materials = { "asset/Luftwaffe/dfs230/glas.mtl", },
+						mesh = "asset/Luftwaffe/dfs230/glas_lod0.msh",
+						name = "MSH_Fenster_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						_meshId = 2,
+						_origMeshId = 2,
+						materials = { "asset/Luftwaffe/dfs230/rumpf1.mtl", },
+						mesh = "asset/Luftwaffe/dfs230/rumpf_lod2.msh",
+						name = "MSH_Rumpf_1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -0.18, 1, },
+			},
+			static = false,
+			visibleFrom = 250,
+			visibleTo = 1000,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 1938,
+			yearTo = 1945,
+		},
+		cost = {
+			price = -1,
+		},
+	},
+	version = 1,
+}
+end
