@@ -12,7 +12,7 @@ return {
                 role = "CREATOR",
             },
       },
-      tags = {"europe", "brush asset", },
+      tags = {"europe", "assets", "planes" },
       visible = true,
     },
 }
