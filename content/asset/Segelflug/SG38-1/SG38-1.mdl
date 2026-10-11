@@ -1,0 +1,43 @@
+function data()
+return { 
+		boundingInfo = { 
+			bbMax = { 0.88944, 5.71992, 1.52926, },
+			bbMin = { -5.28787, -5.00493, 0, },
+		},
+		collider = { 
+			params = { 
+				halfExtents = { 3.08865, 5.36242, 0.76463, },
+			},
+			transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.19921, 0.357495, 0.76463, 1, },
+			type = "BOX",
+		},
+		lods = {
+			{ 
+				node = { 
+					children = {
+						{ 
+							materials = { "/asset/Segelflug/sg38/mat/rumpf1.mtl", },
+							mesh = "/asset/Segelflug/sg38/msh/rumpf1.msh",
+							name = "MSH_rumpf1_1",
+							transf = { 1, 0, 0, 0, 0, 0.95621, -0.29268, 0, 0, 0.29268, 0.95621, 0, 0, 0, 0, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				},
+				visibleFrom = 0,
+				visibleTo = 2500,
+			},
+		},
+		metadata = { 
+			availability = { 
+				yearFrom = 0,
+				yearTo = 0,
+			},
+			cost = { 
+				price = -1,
+			},
+		},
+		version = 2,
+	}
+end

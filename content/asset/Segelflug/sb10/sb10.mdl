@@ -1,0 +1,49 @@
+function data()
+return { 
+		boundingInfo = { 
+			bbMax = { 2.8621, 14.8434, 3.47878, },
+			bbMin = { -7.63717, -14.3821, -0.00594, },
+		},
+		collider = { 
+			params = { 
+				halfExtents = { 5.24963, 14.6127, 1.74236, },
+			},
+			transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.38754, 0.230625, 1.73642, 1, },
+			type = "BOX",
+		},
+		lods = {
+			{ 
+				node = { 
+					children = {
+						{ 
+							materials = { "/asset/Luftwaffe/storch1/mat/glas.mtl", },
+							mesh = "msh/glas.msh",
+							name = "MSH_glas_1",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.34592, 0.11543, 0.91193, 1, },
+						},
+						{ 
+							materials = { "mat/rumpf.mtl", },
+							mesh = "msh/Rumpf.msh",
+							name = "MSH_Rumpf_1",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.34592, 0.11543, 0.91193, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				},
+				visibleFrom = 0,
+				visibleTo = 2500,
+			},
+		},
+		metadata = { 
+			availability = { 
+				yearFrom = 0,
+				yearTo = 0,
+			},
+			cost = { 
+				price = -1,
+			},
+		},
+		version = 2,
+	}
+end

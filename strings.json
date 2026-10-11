@@ -1,0 +1,58 @@
+{	
+  "en": {
+   
+        "Plane Assets" : "Plane Assets",
+        "Bundeswehr Asset Set" : "Bundeswehr Asset Set",
+        "Statische Flugzeuge der Bundeswehr." : "Static planes of Bundeswehr.",
+        "Hubschrauber Asset Set" : "Helicopter Asset Set",
+        "Statische Hubschrauber." : "Static helicopter.",
+        "Luftwaffe Asset Set" : "Luftwaffe Asset Set",
+        "Statische Flugzeuge der Luftwaffe." : "Static planes of Luftwaffe.",
+        "Segelflug Asset Set" : "Sailplanes Asset Set",
+        "Statische Segelflugzeuge." : "Static sailplanes.",
+        "Luftwaffe Asset Set" : "Luftwaffe Asset Set",
+        "Statische Flugzeuge/Asset des ersten Weltkrieg." : "Static planes/assets of WW I.",
+        "als Asset" : " as asset",
+        "Luftwaffe WW1" : "Luftwaffe WWI",
+        "Luftwaffe" : "Luftwaffe",
+        "Segelflug" : "Sailplane",
+			
+		"assets": "Assets Show?",
+		"tooltip_assets": "Should the assets be capitalized?",
+		"br145_assets": "Adtranz Class 145 / 146.0",
+		"br145_assets_desc": "The Adtranz Class 145 / 146.0 variants available in this menu.",
+		"auswahl_br145": "Selecting from the available options",
+		"tooltip_auswahl": "Selection of the various options available.",
+		"x_axis": "X-axis offset",
+		"tooltip_offest_x": "The asset can be moved along the X-axis in 10-centimeter increments."
+  },
+  
+  "de": {
+    		
+        "Plane_Assets" : "Flugzeug Assets",
+        "Bundeswehr Asset Set" : "Bundeswehr Asset Set",
+        "Statische Flugzeuge der Bundeswehr." : "Statische Flugzeuge der Bundeswehr.",
+        "Hubschrauber Asset Set" : "Hubschrauber Asset Set",
+        "Statische Hubschrauber." : "Statische Hubschrauber.",
+        "Luftwaffe Asset Set" : "Luftwaffe Asset Set",
+        "Statische Flugzeuge der Luftwaffe." : "Statische Flugzeuge der Luftwaffe.",
+        "Segelflug Asset Set" : "Segelflug Asset Set",
+        "Statische Segelflugzeuge." : "Statische Segelflugzeuge.",
+        "Luftwaffe Asset Set" : "Luftwaffe Asset Set",
+        "Statische Flugzeuge/Asset des ersten Weltkrieg." : "Statische Flugzeuge/Asset des ersten Weltkrieg.",
+        "als Asset" : " als Asset",
+        "Luftwaffe WW1" : "Luftwaffe WW1",
+        "Luftwaffe" : "Luftwaffe",
+        "Segelflug" : "Segelflug",
+	
+		"assets": "Assets einblenden?",
+		"tooltip_assets": "Soll die Assets aktiviert werden?",		
+		"br145_assets": "Adtranz BR 145 / 146.0",
+		"br145_assets_desc": "In diesem Menü sind die Adtranz BR 145 / 146.0 Varianten verfügbar.",
+		"auswahl_br145": "Auswahl der verfügbaren Varianten",
+		"tooltip_auswahl": "Auswahl der verschiedenen Varianten, die verfügbar sind.",
+		"x_axis": "Verschub x-Achse",
+		"tooltip_offest_x": "Das Asset kann auf der X-Achse in 10 cm-Schritten verschoben werden."
+		
+  }
+}

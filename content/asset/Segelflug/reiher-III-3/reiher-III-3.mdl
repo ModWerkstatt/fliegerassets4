@@ -1,0 +1,55 @@
+function data()
+return { 
+		boundingInfo = { 
+			bbMax = { 2.83668, 9.47492, 1.7467, },
+			bbMin = { -4.94256, -9.47493, -0.00014, },
+		},
+		collider = { 
+			params = { 
+				halfExtents = { 3.88962, 9.47493, 0.87342, },
+			},
+			transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.05294, -4.76837e-06, 0.87328, 1, },
+			type = "BOX",
+		},
+		lods = {
+			{ 
+				node = { 
+					children = {
+						{ 
+							materials = { "/asset/Luftwaffe/storch1/mat/glas.mtl", },
+							mesh = "/asset/Segelflug/reiher/msh/glas.msh",
+							name = "MSH_glas_3",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.50357, 0, 0.77616, 1, },
+						},
+						{ 
+							materials = { "/asset/Segelflug/reiher/mat/rumpf3.mtl", },
+							mesh = "/asset/Segelflug/reiher/msh/rumpf3.msh",
+							name = "MSH_rumpf3_1",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.50357, 0, 0.77616, 1, },
+						},
+						{ 
+							materials = { "/asset/Segelflug/reiher/mat/rumpf.mtl", },
+							mesh = "/asset/Segelflug/reiher/msh/startwagen3.msh",
+							name = "MSH_startwagen3_1",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.35782, 0, 0.14497, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				},
+				visibleFrom = 0,
+				visibleTo = 2500,
+			},
+		},
+		metadata = { 
+			availability = { 
+				yearFrom = 0,
+				yearTo = 0,
+			},
+			cost = { 
+				price = -1,
+			},
+		},
+		version = 2,
+	}
+end

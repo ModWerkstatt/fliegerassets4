@@ -1,0 +1,22 @@
+{
+	"name": "Aircraft Asset Set 4",
+	"summary": "Aircraft collection to set up airfield scenes.",
+	"description": "Aircraft collection to set up airfield scenes.",
+	"localization" : {
+		"de": {
+			"name": "Flugzeug Asset Set 4",
+			"summary": "Flugzeugset zum Gestalten von Flugplatzszenen.",
+			"description": "Flugzeugset zum Gestalten von Flugplatzszenen."
+		}
+	},
+	"authors": [
+		{
+			"name": "Modwerkstatt",
+			"role": "CREATOR"
+		}
+	],
+	"tags": [
+		"Other Asset"
+	],
+	"url": "https://modwerkstatt.com/downloads/tpf3/flugzeug-assets-4"
+}

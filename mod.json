@@ -1,0 +1,21 @@
+{
+    "autoActivate": false,
+    "cosmetic": null,
+    "dependencies": null,
+    "incompatibilities": null,
+    "modId": "mw_fliegerassets4",
+    "options": null,
+	"params": null,
+    "postRunScript": {
+        "fileName": ""
+    },
+    "preRunScript": {
+        "fileName": ""
+	},
+    "runScript": {
+        "fileName": ""
+    },
+    "revision": 1,
+    "severityAdd": "None",
+    "severityRemove": "Warning"
+}

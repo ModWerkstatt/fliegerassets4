@@ -1,0 +1,93 @@
+function data()
+return { 
+		boundingInfo = { 
+			bbMax = { 3.51806, 1.3765, 2.57652, },
+			bbMin = { -3.05938, -1.3765, -0.02719, },
+		},
+		collider = { 
+			params = { 
+				halfExtents = { 3.28872, 1.3765, 1.30185, },
+			},
+			transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.22934, 0, 1.27466, 1, },
+			type = "BOX",
+		},
+		lods = {
+			{ 
+				node = { 
+					children = {
+						{ 
+							materials = { "/asset/Segelflug/fox/mat/rumpf3.mtl", },
+							mesh = "/asset/Segelflug/fox/msh/rumpf_lod0.msh",
+							name = "rumpf_lod0_1",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.884857, 1, },
+						},
+						{ 
+							materials = { "/asset/Segelflug/fox/mat/glas.mtl", },
+							mesh = "/asset/Segelflug/fox/msh/glas_lod0.msh",
+							name = "glas_lod0_2",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.884857, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				},
+				visibleFrom = 0,
+				visibleTo = 150,
+			},
+			{ 
+				node = { 
+					children = {
+						{ 
+							materials = { "/asset/Segelflug/fox/mat/rumpf3.mtl", },
+							mesh = "/asset/Segelflug/fox/msh/rumpf_lod0.msh",
+							name = "rumpf_lod0_1",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.884857, 1, },
+						},
+						{ 
+							materials = { "/asset/Segelflug/fox/mat/glas.mtl", },
+							mesh = "/asset/Segelflug/fox/msh/glas_lod0.msh",
+							name = "glas_lod0_2",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.884857, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				},
+				visibleFrom = 150,
+				visibleTo = 250,
+			},
+			{ 
+				node = { 
+					children = {
+						{ 
+							materials = { "/asset/Segelflug/fox/mat/rumpf3.mtl", },
+							mesh = "/asset/Segelflug/fox/msh/rumpf_lod0.msh",
+							name = "rumpf_lod0_1",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.884857, 1, },
+						},
+						{ 
+							materials = { "/asset/Segelflug/fox/mat/glas.mtl", },
+							mesh = "/asset/Segelflug/fox/msh/glas_lod0.msh",
+							name = "glas_lod0_2",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0.884857, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				},
+				visibleFrom = 250,
+				visibleTo = 2000,
+			},
+		},
+		metadata = { 
+			availability = { 
+				yearFrom = 1967,
+				yearTo = 2001,
+			},
+			cost = { 
+				price = 5000,
+			},
+		},
+		version = 2,
+	}
+end

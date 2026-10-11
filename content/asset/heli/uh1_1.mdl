@@ -1,0 +1,93 @@
+function data()
+return { 
+		boundingInfo = { 
+			bbMax = { 3.51806, 1.3765, 2.57652, },
+			bbMin = { -3.05938, -1.3765, -0.02719, },
+		},
+		collider = { 
+			params = { 
+				halfExtents = { 3.28872, 1.3765, 1.30185, },
+			},
+			transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.22934, 0, 1.27466, 1, },
+			type = "BOX",
+		},
+		lods = {
+			{ 
+				node = { 
+					children = {
+						{ 
+							materials = { "/asset/heli/uh1/mat/rumpf1.mtl", },
+							mesh = "/asset/heli/uh1/msh/rumpf.msh",
+							name = "rumpf_1",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/asset/heli/uh1/mat/glas.mtl", },
+							mesh = "/asset/heli/uh1/msh/fenster.msh",
+							name = "fenster_2",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				},
+				visibleFrom = 0,
+				visibleTo = 150,
+			},
+			{ 
+				node = { 
+					children = {
+						{ 
+							materials = { "/asset/heli/uh1/mat/rumpf1.mtl", },
+							mesh = "/asset/heli/uh1/msh/rumpf.msh",
+							name = "rumpf_1",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/asset/heli/uh1/mat/glas.mtl", },
+							mesh = "/asset/heli/uh1/msh/fenster.msh",
+							name = "fenster_2",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				},
+				visibleFrom = 150,
+				visibleTo = 250,
+			},
+			{ 
+				node = { 
+					children = {
+						{ 
+							materials = { "/asset/heli/uh1/mat/rumpf1.mtl", },
+							mesh = "/asset/heli/uh1/msh/rumpf.msh",
+							name = "rumpf_1",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "/asset/heli/uh1/mat/glas.mtl", },
+							mesh = "/asset/heli/uh1/msh/fenster.msh",
+							name = "fenster_2",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				},
+				visibleFrom = 250,
+				visibleTo = 2000,
+			},
+		},
+		metadata = { 
+			availability = { 
+				yearFrom = 1943,
+				yearTo = 1945,
+			},
+			cost = { 
+				price = 5000,
+			},
+		},
+		version = 2,
+	}
+end
